@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Animax - AI Animation Studio 🚀
 
-# Run and deploy your AI Studio app
+Animax, doğal dil komutlarını (prompt) kullanarak saniyeler içinde özel HTML, CSS ve JavaScript animasyonları oluşturan yapay zeka destekli bir platformdur.
 
-This contains everything you need to run your app locally.
+## ✨ Özellikler
 
-View your app in AI Studio: https://ai.studio/apps/be4574ca-a1d9-413b-a0d1-8f16d0f0cca4
+- **AI Destekli Üretim:** Gemini AI kullanarak karmaşık animasyonları sadece tarif ederek oluşturun.
+- **Canlı Önizleme:** Oluşturulan animasyonları anında tarayıcıda izleyin.
+- **Kod Paneli:** Üretilen HTML, CSS ve JS kodlarını inceleyin ve kopyalayın.
+- **Kullanıcı Sistemi:** Kayıt olun ve oluşturduğunuz animasyonları koleksiyonunuza kaydedin.
+- **Misafir Modu:** Kayıt olmadan 3 adet deneme animasyonu oluşturun.
+- **Modern Arayüz:** Karanlık mod odaklı, canlı ve kullanıcı dostu tasarım.
 
-## Run Locally
+## 🛠️ Teknolojiler
 
-**Prerequisites:**  Node.js
+- **Frontend:** React, TypeScript, Tailwind CSS, Lucide Icons, Framer Motion.
+- **Backend:** Node.js, Express, Better-SQLite3.
+- **AI:** Google Gemini API.
+- **Build Tool:** Vite.
 
+## 🚀 Yerel Kurulum
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Projeyi kendi bilgisayarınızda çalıştırmak için:
+
+1.  **Depoyu kopyalayın:**
+    ```bash
+    git clone <github-repo-url>
+    cd animax-studio
+    ```
+
+2.  **Bağımlılıkları yükleyin:**
+    ```bash
+    npm install
+    ```
+
+3.  **Ortam değişkenlerini ayarlayın:**
+    `.env` dosyası oluşturun ve Gemini API anahtarınızı ekleyin:
+    ```env
+    GEMINI_API_KEY=your_api_key_here
+    ```
+
+4.  **Geliştirme sunucusunu başlatın:**
+    ```bash
+    npm run dev
+    ```
+    Uygulama `http://localhost:3000` adresinde çalışacaktır.
+
+## 🌐 Render.com'da Yayınlama (Deployment)
+
+1.  GitHub'da yeni bir repository oluşturun ve kodları yükleyin.
+2.  Render.com'da **New Web Service** oluşturun.
+3.  Ayarlar:
+    - **Build Command:** `npm install && npm run build`
+    - **Start Command:** `npm start`
+4.  **Environment Variables** kısmına `GEMINI_API_KEY` anahtarınızı ekleyin.
+
+## 📄 Lisans
+
+Bu proje Apache-2.0 lisansı ile korunmaktadır.
